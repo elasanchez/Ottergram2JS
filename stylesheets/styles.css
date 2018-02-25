@@ -4,8 +4,6 @@ Programmer: Luigi sanchez
 This code is inspired by the book Front-End Web Development, The Big Nerd Ranch Guide, by Chris Aquino and Todd Gandee
 
 
-
-
 Specificity: Elements > Class = attributes > Id(avoid)
  */
 
@@ -124,12 +122,31 @@ margin-bottom: 10px;
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
   align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
+.detail-image-left-button {
+  display: inline-block;
+  font-size: 50px;
+  margin: 15px 15px;
+  padding: 4px 10px;
 
+}
+.detail-image-right-button {
+  display: inline-block;
+  order:3;
+  font-size: 50px;
+  margin: 15px 15px;
+  padding: 4px 10px;
+}
 .detail-image-frame {
   position: relative;
   text-align: center;
+  align-self:center;
+  justify-content: center;
 }
 
 .detail-image {
