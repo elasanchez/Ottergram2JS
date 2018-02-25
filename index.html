@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--DOM : Document object model-->
+<!--
+Programmer: Luigi sanchez
+This code is inspired by the book Front-End Web Development, The Big Nerd Ranch Guide, by Chris Aquino and Todd Gandee
+
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> ottergram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1 class="logo-text">Ottergram</h1>
+  </header>
+
+  <main class="main-content">
+  <!--Unordered List -->
+    <ul class="thumbnail-list">
+      <!--List Items -->
+      <li class="thumbnail-item">
+        <a href="img/otter1.jpg"  data-image-role="trigger"
+                                  data-image-title="Stayin' Alive"
+                                  data-image-url ="img/otter1.jpg">
+            <img class ="thumbnail-image" src="img/otter1.jpg" alt="Barry the Otter">
+          <span class = "thumbnail-title">Barry</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/otter2.jpg" data-image-role="trigger"
+                                data-image-title ="How Deep Is Your Love"
+                                data-image-url="img/otter2.jpg">
+        <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
+      <span class = "thumbnail-title">Robin</span>
+      </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/otter3.jpg" data-image-role="trigger"
+                                data-image-title="You Should Be Dancing"
+                                data-image-url="img/otter3.jpg">
+        <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
+      <span class = "thumbnail-title">Maurice</span>
+    </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/otter4.jpg" data-image-role="trigger"
+                                data-image-title="Night Fever"
+                                data-image-url="img/otter4.jpg">
+        <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
+      <span class = "thumbnail-title">Lesley</span>
+    </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/otter5.jpg" data-image-role="trigger"
+                                data-image-title="To Love Somebody"
+                                data-image-url="img/otter5.jpg">
+        <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
+      <span class = "thumbnail-title">Barbara</span>
+      </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/fig1.png" data-image-role="trigger"
+                              data-image-title="Keep on Planting"
+                              data-image-url="img/fig1.png">
+            <img class ="thumbnail-image" src="img/fig1.png" alt="Final Splash Screen of Grid Garden">
+          <span class = "thumbnail-title">Froggy</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="img/fig2.png" data-image-role="trigger"
+                              data-image-title="Nature is great"
+                              data-image-url="img/fig2.png">
+            <img class ="thumbnail-image" src="img/fig2.png" alt="Final Splash screen of Froggy">
+          <span class = "thumbnail-title">Garden</span>
+        </a>
+      </li>
+    </ul>
+
+  <!--Detail Image container -->
+    <div class="detail-image-container">
+      <div class="detail-image-frame">
+        <img class="detail-image" data-image-role="target" src="img/otter1.jpg" alt="">
+        <span class="detail-image-title" data-image-role="title">Stayin' Alive</span>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+
+</html>
