@@ -59,15 +59,15 @@ function addButtonClickHandler() {
     if(currentItem > 0){
       setDetailsFromThumb(thumbnailArray[currentItem-1]);
       currentItem--;
+    }else{
+      currentItem = 4;
+      setDetailsFromThumb(thumbnailArray[currentItem])
     }
   });
   rightButton.addEventListener('click', function(event){
     event.preventDefault();
-
-    if(currentItem < 6){
-      setDetailsFromThumb(thumbnailArray[currentItem+1]);
-      currentItem++;
-    }
+    currentItem = (currentItem + 1)%5;
+    setDetailsFromThumb(thumbnailArray[currentItem]);
   });
 }
 // firstThumbnail.addEventListener('click', function(event) {
