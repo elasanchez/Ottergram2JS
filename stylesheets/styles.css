@@ -3,7 +3,6 @@
 Programmer: Luigi sanchez
 This code is inspired by the book Front-End Web Development, The Big Nerd Ranch Guide, by Chris Aquino and Todd Gandee
 
-
 Specificity: Elements > Class = attributes > Id(avoid)
  */
 
@@ -16,7 +15,6 @@ Specificity: Elements > Class = attributes > Id(avoid)
 }
 
 /* Declaring a font family to be used*/
-
 @font-face {
   font-family: 'lakeshore';
   src: url('fonts/LAKESHOR-webfont.eot');
@@ -35,7 +33,6 @@ a {
 }
 
 /*  Grouping selectors and not inherited properties*/
-
 html, body {
   height: 100%;
 }
@@ -123,11 +120,8 @@ margin-bottom: 10px;
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
-  /* justify-content: space-between; */
-  /* justify-content: space-around; */
   align-items: center;
-  /* justify-content: center; */
-  /* align-items: center; */
+
 }
 .detail-image-left-button {
   display: inline-block;
